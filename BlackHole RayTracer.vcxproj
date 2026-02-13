@@ -105,6 +105,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)res\Vec3\;$(ProjectDir)res\stb_image\stb-master\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -120,6 +121,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)res\Vec3\;$(ProjectDir)res\stb_image\stb-master\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -132,6 +134,23 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Application.cpp" />
+    <ClCompile Include="src\Color.cpp" />
+    <ClCompile Include="src\CubeMap.cpp" />
+    <ClCompile Include="src\Image.cpp" />
+    <ClCompile Include="src\RelativisticRay.cpp" />
+    <ClCompile Include="src\Renderer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="res\Vec3\Vec3.h" />
+    <ClInclude Include="src\BlackHole.h" />
+    <ClInclude Include="src\Camera.h" />
+    <ClInclude Include="src\Color.h" />
+    <ClInclude Include="src\Constants.h" />
+    <ClInclude Include="src\CubeMap.h" />
+    <ClInclude Include="src\Image.h" />
+    <ClInclude Include="src\RelativisticRay.h" />
+    <ClInclude Include="src\Renderer.h" />
+    <ClInclude Include="src\Utility.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="BlackHole RayTracer.vcxproj" />
+  <Project Path="BlackHole RayTracer.vcxproj" Id="3cb39fd3-46d1-4b33-9007-529604899411" />
 </Solution>

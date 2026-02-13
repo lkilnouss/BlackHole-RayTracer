@@ -2,6 +2,7 @@
 
 #include "Image.h"
 #include "Utility.h"
+#include <stdexcept>
 
 class CubeMap
 {
@@ -25,5 +26,14 @@ public:
 	}
 
 	Color get_pixel(const Vec3& ray_dir) const;
+};
+
+CubeMap get_cube_map(int i);
+
+class _invalid_cube_map_exception
+	: public std::runtime_error
+{
+public:
+	_invalid_cube_map_exception(const std::string& msg) : std::runtime_error(msg) {}
 };
 

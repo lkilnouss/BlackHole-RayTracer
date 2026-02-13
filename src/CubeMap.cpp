@@ -117,3 +117,12 @@ Color CubeMap::get_pixel(const Vec3& ray_dir) const
 	}
 	}
 }
+
+CubeMap get_cube_map(int i)
+{
+
+		if (i == 0)
+			return CubeMap(Image("milky-way/cm_px.png"), Image("milky-way/cm_nx.png"), Image("milky-way/cm_py.png"), Image("milky-way/cm_ny.png"), Image("milky-way/cm_pz.png"), Image("milky-way/cm_nz.png"));
+		else
+			throw _invalid_cube_map_exception("invalid cubemap!");
+}

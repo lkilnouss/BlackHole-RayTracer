@@ -69,5 +69,8 @@
     <ClInclude Include="res\Vec3\Vec3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Service.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

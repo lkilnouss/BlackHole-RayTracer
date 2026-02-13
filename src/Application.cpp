@@ -11,7 +11,7 @@ int main()
 
 	// init
 	Camera cam(1920, 100, 100, look_from); // width, fov, samples, look_from
-	CubeMap milky_way(Image("cm_px.png"), Image("cm_nx.png"), Image("cm_py.png"), Image("cm_ny.png"), Image("cm_pz.png"), Image("cm_nz.png"));
+	CubeMap milky_way(Image("milky-way/cm_px.png"), Image("milky-way/cm_nx.png"), Image("milky-way/cm_py.png"), Image("milky-way/cm_ny.png"), Image("milky-way/cm_pz.png"), Image("milky-way/cm_nz.png"));
 	Renderer renderer(cam, milky_way);
 	BlackHole SgrA(Vec3(0.0, 0.0, 0.0), 1.0);
 

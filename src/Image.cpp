@@ -8,7 +8,7 @@
 
 Image::Image(std::string filename)
 {
-	std::string filepath = "./SkyBox/" + filename;
+	std::string filepath = "res/skyboxes/" + filename;
 
 	// init loading of image
 	int w, h, channels;
